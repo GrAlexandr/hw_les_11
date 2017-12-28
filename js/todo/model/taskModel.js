@@ -26,6 +26,7 @@ function addToLocalStor() {
 }
 
 TaskModel.prototype = Object.create(Array.prototype);
+TaskModel.prototype.constructor = TaskModel;
 
 TaskModel.prototype.done = function (task, status) {
 	task.done = status;
