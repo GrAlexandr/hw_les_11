@@ -65,15 +65,15 @@ function taskView(rootElement, tasks, actions) {
 			actions.onDone(task, event.target.checked);
 		});
 
-		li.querySelector('.move-up').addEventListener('click', function (event) {
+		li.querySelector('.move-up').addEventListener('click', function () {
 			actions.onMove(task);
 		});
 
-		li.querySelector('.move-down').addEventListener('click', function (event) {
+		li.querySelector('.move-down').addEventListener('click', function () {
 			actions.onMove(task);
 		});
 
-		li.querySelector('.delete').addEventListener('click', function (event) {
+		li.querySelector('.delete').addEventListener('click', function () {
 			actions.onDelete(task);
 		});
 

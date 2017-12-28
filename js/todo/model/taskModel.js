@@ -71,7 +71,6 @@ TaskModel.prototype.delete = function (task) {
 	if (index >= 0) {
 		this.splice(index, 1);
 	}
-	localStorage.setItem('arrTasks', JSON.stringify(tasks));
 	addToLocalStor();
 	this.trigger('delete', [task]);
 };
